@@ -21,7 +21,7 @@ import slang as a cjs module.
 
 ## step 2 - initialize slang
 
-once you have slang in scope following either of the two methods above you have to initialize slang
+Once you have Slang in scope, by following either of the above two methods, you have to initialize Slang, which will add a mic button as an overlay to every page.
 
 ```Slang.initialize({
 
