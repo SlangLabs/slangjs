@@ -10,14 +10,23 @@ Before starting with integrating slang with your website using the web-sdk, you 
 console - https://console.slanglabs.in/home
 console guide - https://docs.slanglabs.in/slang/developer-guide/slang-developer-guide
 
-## step 1 - choose your bundle
+## step 1 - Installation
 
-If you are trying to integrate slang into a static website or a server-side rendered webapp then pick the iife bundle.
-Put the bundle in a script tag in ALL the pages you want to integrate slang in to.
+### npm packages
+If you are using npm packages to manage dependencies then you have to add `slang-js-sdk` to your project.
+`npm install slang-js-sdk`
+or
+`yarn add slang-js-sdk`
 
-If however you want to integrate slang into a React/Angular/Vue like app where you use npm modules then pick the cjs bundle.
-import slang as a cjs module.
-`import Slang from "slangjs";`
+Then import slang where you want to initialize it
+`import Slang from "slang-js-sdk";`
+
+
+### Script tags
+If however you have static html files where you want to add slang to then drop a script tag pointing to slang-js-sdk in ALL your html files.
+`<script type="text/javascript" src="https://slang-public.s3.ap-south-1.amazonaws.com/index-iife.js"></script>`
+
+This should bring slang in scope, and you can refer to it.
 
 ## step 2 - initialize slang
 
