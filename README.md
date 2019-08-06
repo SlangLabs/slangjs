@@ -32,29 +32,19 @@ This should bring slang in scope, and you can refer to it.
 
 Once you have Slang in scope, by following either of the above two methods, you have to initialize Slang, which will add a mic button as an overlay to every page.
 
-```Slang.initialize({
-
-      buddyId: “BUDDY_ID_HERE”,
-
-      apiKey: “API_KEY_HERE”,
-
-      env: "stage", // one of ['stage','prod']
-
-      locale: "en-IN", // one of ['en-IN','hi-IN']
-
-      onSuccess: () => {
-
+```
+Slang.initialize({
+    buddyId: “BUDDY_ID_HERE”,
+    apiKey: “API_KEY_HERE”,
+    env: "stage", // one of ['stage','prod']
+    locale: "en-IN", // one of ['en-IN','hi-IN']
+    onSuccess: () => {
         console.log("Slang initialized successfully"); // anything you want to do once slang gets init successfully
-
-      },
-
-      onFailure: () => {
-
+    },
+    onFailure: () => {
         console.log("Slang Failed to initialize");  // anything you want to do once slang fails to init
-
-      }
-
-    });
+    }
+});
 ```
 
 ## Step 3 - Set intent action handler
@@ -69,15 +59,16 @@ the signature of the action handler function is
 
 eg:
 
-```const intentHandler = (intent) => {
-        switch(intent.name){
-            case 'show_balance':
-                showBalance()
-                return true
-            default:
-                return false
-        }
-    };
+```
+const intentHandler = (intent) => {
+    switch(intent.name){
+        case 'show_balance':
+            showBalance()
+            return true
+        default:
+            return false
+    }
+};
 ```
 
 Once you have defined your intent handler, you can register your intent handler with slang by:
@@ -108,8 +99,8 @@ Hints are a map of locale to an array of strings. eg:
 
 ```
 const hints = {
-      "en-IN": ["this","is","a","hint"]
-    }
+    "en-IN": ["this","is","a","hint"]
+}
 Slang.setASRHints(hints);
 ```
 
