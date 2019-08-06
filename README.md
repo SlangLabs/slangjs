@@ -1,16 +1,16 @@
-# slangjs
+# slang-web-sdk
 slang sdk for the web
 
-# integrating slang on to your webapp/pwa/website
+# Integrating slang on to your webapp/pwa/website
 
-## prerequisites
+## Prerequisites
 
 Before starting with integrating slang with your website using the web-sdk, you must create an application in our console and configure it.
 
 console - https://console.slanglabs.in/home
 console guide - https://docs.slanglabs.in/slang/developer-guide/slang-developer-guide
 
-## step 1 - Installation
+## Step 1 - Installation
 
 ### npm packages
 If you are using npm packages to manage dependencies then you have to add `slang-web-sdk` to your project.
@@ -28,7 +28,7 @@ If however you have static html files where you want to add slang to then drop a
 
 This should bring slang in scope, and you can refer to it.
 
-## step 2 - initialize slang
+## Step 2 - Initialize slang
 
 Once you have Slang in scope, by following either of the above two methods, you have to initialize Slang, which will add a mic button as an overlay to every page.
 
@@ -57,7 +57,7 @@ Once you have Slang in scope, by following either of the above two methods, you 
     });
 ```
 
-## step 3 - set intent action handler
+## Step 3 - Set intent action handler
 
 Slang has processed whatever the user has spoken and has extracted intent and entities from it.
 Now you can do whatever action you want to take based on the intent and entities.
