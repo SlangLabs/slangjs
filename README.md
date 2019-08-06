@@ -13,17 +13,17 @@ console guide - https://docs.slanglabs.in/slang/developer-guide/slang-developer-
 ## step 1 - Installation
 
 ### npm packages
-If you are using npm packages to manage dependencies then you have to add `slang-js-sdk` to your project.
-`npm install slang-js-sdk`
+If you are using npm packages to manage dependencies then you have to add `slang-web-sdk` to your project.
+`npm install slang-web-sdk`
 or
-`yarn add slang-js-sdk`
+`yarn add slang-web-sdk`
 
 Then import slang where you want to initialize it
-`import Slang from "slang-js-sdk";`
+`import Slang from "slang-web-sdk";`
 
 
 ### Script tags
-If however you have static html files where you want to add slang to then drop a script tag pointing to slang-js-sdk in ALL your html files.
+If however you have static html files where you want to add slang to then drop a script tag pointing to slang-web-sdk in ALL your html files.
 `<script type="text/javascript" src="https://slang-public.s3.ap-south-1.amazonaws.com/index-iife.js"></script>`
 
 This should bring slang in scope, and you can refer to it.
